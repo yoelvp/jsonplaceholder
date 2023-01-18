@@ -1,5 +1,23 @@
-# Tasks (By: YhoelVP)
-create tasks and save them in your browser.
+# {JSON}Placeholder
+Consumo de un API donde puse a prueba todos mis conocimientos en **Javascrip**
 
-![imagen](https://user-images.githubusercontent.com/69375881/130339680-8fedd91b-216d-4273-b4f2-53f10428a086.png)
-![imagen](https://user-images.githubusercontent.com/69375881/130339690-76e1c773-a8b0-423f-a9bc-04547699b295.png)
+## Instalación
+Para instalar y poder ejecutar el proyecto en su equipo local, puede seguir estos pasos:
+  1. Clona el repositorio `https://github.com/yoelvp/jsonplaceholder.git`
+  2. Instala las dependencias del proyecto `npm install`
+  3. Inicia el proyecto `npm run dev`
+
+## Uso
+La aplicaciones tiene 2 páginas, una página de inicio donde muestra información general y la otra página muestra todos **posts**
+
+## Imágenes
+  1. Consumo del endpoint **`/posts`** donde trae 100 registros, le añadí una paginación sencilla.
+  ![Imagen](./public/screenshots/posts.png)
+
+  2. Consumo del endpoint **`/posts/{postId}/comments`** Consumo de 5 comentarios por post
+  ![Imagen](./public/screenshots/commets-of-post.png)
+
+## Librerías utilizadas
+  1. **`axios`** para el consumo de API
+  2. **`styled-components`** para los estilos, una librería basada en componentes
+  3. **`react-router-dom`** para enrutar las páginas y componentes
