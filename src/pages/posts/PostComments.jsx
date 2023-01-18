@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Dialog from '../../components/Dialog'
-import { Card, Flex, Paragraph } from '../../ui/core'
+import { Card, Flex, Paragraph, Span } from '../../ui/core'
 
 const PostComments = ({ userId, closeDialog }) => {
   const [comments, setComments] = useState([])
@@ -16,20 +16,36 @@ const PostComments = ({ userId, closeDialog }) => {
     setComments(response.data)
   }
 
-  console.log(comments)
-
   return (
     <Dialog closeDialog={closeDialog}>
-      <Flex direction='column'>
+      <Flex direction='column' gap='1rem'>
         {comments.map(comment => {
           return (
             <Card
               key={comment.id}
               background='secondary'
             >
-              <Paragraph key={comment.id}>
-                {comment.name}
-                {comment.postId}
+              <Flex
+                direction='column'
+                gap='0'
+                align='start'
+                marginBottom='8px'
+              >
+                <Paragraph
+                  align='left'
+                  fontWeight='bold'
+                >
+                  {comment.name}
+                </Paragraph>
+                <Span
+                  fontSize='14px'
+                  opacity='0.9'
+                >
+                  {comment.email}
+                </Span>
+              </Flex>
+              <Paragraph align='left'>
+                {comment.body}
               </Paragraph>
             </Card>
           )
