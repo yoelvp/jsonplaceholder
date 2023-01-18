@@ -8,30 +8,35 @@ export {
 
 // * Export components for button
 export {
-  Button
+  Button,
+  ButtonLink
 } from './components/button'
 
 // * Export components for text
 export {
+  Heading,
   Paragraph,
-  Heading
+  Span
 } from './components/text'
 
 // * Export components for header or navbar
 export {
-  Navbar
+  Navbar,
+  Menu
 } from './components/header'
 
 // * Export components for card
 export {
   Card,
+  CardContent,
   CardFooter
 } from './components/card'
 
 // * Export components for container and wrapper of main page
 export {
   Container,
-  Flex
+  Flex,
+  Wrapper
 } from './components/container'
 
 // * Export components for dialog
