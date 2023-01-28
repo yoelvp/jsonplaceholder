@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { color, rounded } from '../assets/utils'
 
 export const Card = styled.section`
-width: 100%;
+  width: 100%;
   border-radius: ${rounded.sm};
   padding: 1rem;
   background-color: ${props => {
@@ -17,7 +17,16 @@ width: 100%;
         return color.white
     }
   }};
-  margin-bottom: ${props => props.marginBottom ? props.marginBottom : 'o'};
+  ${props => props.marginBottom && css`
+    margin-bottom: ${props.marginBottom};
+  `}
+  ${props => props.cursor && css`
+    cursor: ${props.cursor};
+  `}
+
+  &:hover {
+    opacity: 0.8;
+  }
 `
 
 export const CardContent = styled.article`

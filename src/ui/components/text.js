@@ -40,5 +40,5 @@ export const Paragraph = styled.p`
 export const Span = styled.span`
   font-size: ${props => props.fontSize ? props.fontSize : '16px'};
   color: ${props => props.color ? props.color : color.white};
-  opacity: ${props => props.opacity ? props.opacity : '0'};
+  opacity: ${props => props.opacity ? props.opacity : '1'};
 `

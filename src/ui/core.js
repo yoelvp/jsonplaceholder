@@ -32,6 +32,11 @@ export {
   CardFooter
 } from './components/card'
 
+// * Export components for the grid
+export {
+  Grid
+} from './components/grid'
+
 // * Export components for container and wrapper of main page
 export {
   Container,
