@@ -12,6 +12,7 @@ const Posts = () => {
 
   useEffect(() => {
     getPosts()
+    window.scrollTo(0, 0)
   }, [page])
 
   const getPosts = async () => {
@@ -19,25 +20,25 @@ const Posts = () => {
     setPosts(response.data)
   }
 
-  const handlePrevPage = () => setPage(page - 1)
-  const handleNextPage = () => setPage(page + 1)
+  const handlePrevPage = () => {
+    setPage(page - 1)
+    window.scrollTo(0, 0)
+  }
+
+  const handleNextPage = () => {
+    setPage(page + 1)
+    window.scrollTo(0, 0)
+  }
 
   console.log(page)
 
   return (
     <>
       <Container paddingX='2rem'>
-        <Heading
-          as='h1'
-          color='primary'
-          marginBottom='1rem'
-        >
+        <Heading as='h1' color='primary' marginBottom='1rem'>
           The best posts
         </Heading>
-        <Flex
-          direction='column'
-          gap='1rem'
-        >
+        <Flex direction='column' gap='1rem'>
           {posts.map(post => <Post key={post.id} post={post} postId={post.id} />)}
         </Flex>
         <Flex justify='space-between' padding='1rem'>

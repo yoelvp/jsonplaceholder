@@ -1,9 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Header from '../components/Header'
-import Home from '../pages/home/Home'
-import Posts from '../pages/posts/Posts'
 import { Wrapper } from '../ui/core'
+
+import Header from '../components/Header'
+
+import Home from '../pages/home/Home'
+import UserAlbums from '../pages/home/UserAlbums'
+import Posts from '../pages/posts/Posts'
 
 const Routing = () => {
   return (
@@ -11,6 +14,7 @@ const Routing = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/user/album/:id' element={<UserAlbums />} />
         <Route path='/posts' element={<Posts />} />
       </Routes>
     </Wrapper>
