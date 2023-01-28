@@ -8,7 +8,7 @@ const Dialog = ({ children, closeDialog }) => {
     <DialogWrapper>
       <DialogHeader marginTop='1rem'>
         <Paragraph>
-          Comentarios
+          Comments
         </Paragraph>
         <Button onClick={closeDialog}>
           <AiOutlineClose />
