@@ -2,10 +2,12 @@ import { styled } from 'styled-components'
 import { Color } from '../types'
 
 export const Paragraph = styled.p<{
-  color?: Color,
+  $color?: Color,
+  $fontSize?: string
 }>`
-  color: ${({ theme, color}) => {
-    switch (color) {
+  font-size: ${({ $fontSize }) => $fontSize ? `${$fontSize}px` : '1rem'};
+  color: ${({ theme, $color}) => {
+    switch ($color) {
       case 'primary':
         return theme.colors.primary
       case 'secondary':

@@ -10,5 +10,6 @@ export {
   PhoneCase,
   Flex,
   Grid,
-  Card
+  Card,
+  ImageProfile
 } from './components/index'

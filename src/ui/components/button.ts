@@ -22,6 +22,8 @@ export const Button = styled.button<{
         return theme.colors.red
       case 'yellow':
         return theme.colors.yellow
+      case 'dark':
+        return theme.colors.dark
       default:
         return theme.colors.primary
     }
@@ -40,6 +42,8 @@ export const Button = styled.button<{
         return theme.colors.red
       case 'yellow':
         return theme.colors.yellow
+      case 'dark':
+        return theme.colors.dark
       default:
         return theme.colors.white
     }
@@ -86,6 +90,8 @@ export const Button = styled.button<{
           return `${theme.colors.red}BF`
         case 'yellow':
           return `${theme.colors.yellow}BF`
+        case 'dark':
+          return `${theme.colors.dark}BF`
         default:
           return `${theme.colors.primary}BF`
       }
