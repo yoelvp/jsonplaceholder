@@ -7,7 +7,9 @@ export const theme = {
     red: '#C70039',
     yellow: '#FCE09B',
     white: '#FFFFFF',
-    gray: '#F1EFEF'
+    gray: '#F1EFEF',
+    'gray-secondary': '#2C3333',
+    dark: '#040D12'
   },
   sizes: {
     small: {
