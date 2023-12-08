@@ -1,8 +1,12 @@
 {
   "name": "jsonplaceholder",
   "description": "",
-  "authors": [
-    "Yoel Valverde <yoelvp73@gmail.com>"
+  "author": "Yoel Valverde <yoelvp73@gmail.com>",
+  "keywords": [
+    "API",
+    "React",
+    "Styled Components",
+    "Axios"
   ],
   "private": true,
   "version": "0.0.1",
@@ -16,16 +20,21 @@
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "^6.17.0",
+    "react-router-dom": "6.20.1",
     "styled-components": "6.1.0"
   },
   "devDependencies": {
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
-    "@typescript-eslint/eslint-plugin": "6.0.0",
+    "@typescript-eslint/eslint-plugin": "6.13.2",
     "@typescript-eslint/parser": "6.0.0",
     "@vitejs/plugin-react": "4.0.3",
     "eslint": "8.45.0",
+    "eslint-config-standard-with-typescript": "40.0.0",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-n": "16.3.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.3",
     "typescript": "5.0.2",
