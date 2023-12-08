@@ -3,9 +3,22 @@ This project implements the consumption of the JSONPlaceholder API in a React ap
 
 
 ## Installation
-1. Clone the repository `git clone https://github.com/yoelvp/jsonplaceholder`.
-2. Run `npm install` to install the dependencies.
-3. Run `npm run dev` to start the application in a local development environment.
+1. Clone the repository
+```
+git clone https://github.com/yoelvp/jsonplaceholder.git
+```
+2. Move to project
+```
+cd jsonplacehoder.git
+```
+3. Install the dependencies
+```
+npm install
+```
+4. Start the application in a local development environment.
+```
+npm run dev
+```
 
 
 ## Author
